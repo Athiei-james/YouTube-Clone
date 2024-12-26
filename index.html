@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>YouTube-clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="flex-box flex-1">
+        <span class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <div class="youtube-logo">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="logo-text"><strong>YouTube</strong></span>
+        </div>
+      </div>
+
+      <div class="flex-box flex-2">
+        <form class="form">
+          <input type="text" placeholder="Search" name="search" />
+          <button class="button">
+            <ion-icon class="search-icon" name="search-outline"></ion-icon>
+          </button>
+        </form>
+
+        <div class="microphone-icon">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+      </div>
+
+      <div class="flex-box flex-3">
+        <div class="create-box">
+          <ion-icon class="add-icon" name="add-outline"></ion-icon>
+          <span class="create">Create</span>
+        </div>
+
+        <div class="notifications">
+          <ion-icon
+            class="notifications-icon"
+            name="notifications-outline"
+          ></ion-icon>
+        </div>
+
+        <figure>
+          <img
+            src="Images/Mubarak.jpg"
+            alt="Head shot of Athiei"
+            class="profile-img"
+          />
+        </figure>
+      </div>
+    </header>
+
+    <div class="containers">
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="list">
+            <i class="fa-solid fa-house"></i><span class="span">Home</span>
+          </li>
+          <li class="list">
+            <i class="fa-solid fa-photo-film icon"></i
+            ><span class="span">Shorts</span>
+          </li>
+          <li class="list">
+            <ion-icon class="album" name="albums-outline"></ion-icon
+            ><span class="span">Subscriptions</span>
+          </li>
+          <li class="list">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="user"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+            <span class="span">You</span>
+          </li>
+          <li class="list downloads">
+            <ion-icon class="arrow" name="arrow-down-outline"></ion-icon
+            ><span class="span">Downloads</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <div class="programs">
+          <ul class="programs-list">
+            <li class="content a--1 all-content">All</li>
+            <li class="content b--2">Computer Programming</li>
+            <li class="content c--3">Foreign Exchange Markets</li>
+            <li class="content d--3">Nollywood</li>
+            <li class="content e--4">Physics</li>
+            <li class="content f--5">Motivation</li>
+            <li class="content g--6">Mixes</li>
+            <li class="content h--7">Music</li>
+            <li class="content i--8">Sketch Comedy</li>
+            <li class="content j--9">Weight Training</li>
+            <li class="content k--10">Entertainment</li>
+            <li class="content m--11">Dramedy</li>
+            <li class="content n--12">ployglots</li>
+          </ul>
+        </div>
+
+        <div class="posts">
+          <section class="post margin-t">
+            <div class="chennels">
+              <img
+                src="Images/t1.jpg"
+                alt="A image of a woman holding books"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">The key to reading faster</p>
+                  <p class="chennel-name">Kevin Reads</p>
+                  <p class="views">900K Views . 20 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/t2.jpg"
+                alt="Hight scholl students"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">High school Episode 11</p>
+                  <p class="chennel-name">Neptune🌏</p>
+                  <p class="views">1M Views . 23 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img src="Images/t3.jpg" alt="A person coding" class="image" />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">I got laid off (as a software Engineer)</p>
+                  <p class="chennel-name">Dev_Santa</p>
+                  <p class="views">860K Views . 16 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/t4.jpg"
+                alt="A woman programming"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Week in the life of a Software Developer</p>
+                  <p class="chennel-name">Unicorn</p>
+                  <p class="views">870K Views . 3 days ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="chennels">
+              <img
+                src="Images/t5.jpg"
+                alt=" A woman laying on the table"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">4am study Vlog</p>
+                  <p class="chennel-name">Be inspired</p>
+                  <p class="views">1.1M Views . 19 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img src="Images/t6.jpg" alt="A man studying" class="image" />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">How to memorize faster as a student</p>
+                  <p class="chennel-name">Project Elon</p>
+                  <p class="views">130K Views . 1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="shorts shorts-margin-b">
+            <div class="shorts-icon">
+              <i class="fa-solid fa-file-video"></i>
+              <span class="shorts-text">Shorts</span>
+            </div>
+            <div class="short">
+              <div class="clips">
+                <img
+                  src="Images/s6.jpg"
+                  alt="Couples holding hands on the stree"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Pick up lines</p>
+                <p class="shorts-views">1.4M views</p>
+              </div>
+              <div class="clips">
+                <img
+                  src="Images/s7.jpg"
+                  alt="A group photo "
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Isabela jumps into the water</p>
+                <p class="shorts-views">12.4M views</p>
+              </div>
+              <div class="clips">
+                <img
+                  src="Images/s8.jpg"
+                  alt="A Man doing skin care"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">
+                  How to keep your skin clear and smooth
+                </p>
+                <p class="shorts-views">999k views</p>
+              </div>
+              <div class="clips none block">
+                <img
+                  src="Images/s9.jpg"
+                  alt="Human Robots playing a tenis"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Will Humans ever beat Robots?</p>
+                <p class="shorts-views">33.6M views</p>
+              </div>
+              <div class="clips none">
+                <img
+                  src="Images/s10.jpg"
+                  alt="A woman holding a roses"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Giving strangers roses🌹</p>
+                <p class="shorts-views">2.4M views</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="post">
+            <div class="chennels">
+              <img src="Images/g1.jpg" alt="Photo" class="image" />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">SDA responds to LGBTQ+</p>
+                  <p class="chennel-name">Bro Lawrence</p>
+                  <p class="views">2.8M Views . 5 days ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g2.jpg"
+                alt="A person studying with laptop"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">How to study for 10+ hours a day</p>
+                  <p class="chennel-name">Productivity</p>
+                  <p class="views">600K Views . 2 months ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g3.jpg"
+                alt="Image of a man giving advise"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">How to Deep work😊</p>
+                  <p class="chennel-name">Mastermind</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g4.jpg"
+                alt="An illustration of human brain on a tablet"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">3 steps to memorizing anything</p>
+                  <p class="chennel-name">Learn with Kara</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g5.jpg"
+                alt="Photo of students studying"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">I wake up my friend at 3am</p>
+                  <p class="chennel-name">MsRania</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g6.jpg"
+                alt="A photo of a astonished girl with a wide mouth opened"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Free study in this University</p>
+                  <p class="chennel-name">Amara</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="post margin-b">
+            <div class="chennels">
+              <img
+                src="Images/g7.jpg"
+                alt="An image of a woman giving advise"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Where to study</p>
+                  <p class="chennel-name">LearningTips</p>
+                  <p class="views">1M Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img src="Images/g8.jpg" alt="A photo of a girl" class="image" />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">The best Universities for scholarships</p>
+                  <p class="chennel-name">Nazaria</p>
+                  <p class="views">600K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g9.jpg"
+                alt="A girl giving suggestions"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Top 10 Affordable Universities in Europe</p>
+                  <p class="chennel-name">Motivation2Study</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g10.jpg"
+                alt="An image of a compus"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Compus tour</p>
+                  <p class="chennel-name">David.K</p>
+                  <p class="views">3M Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g11.jpg"
+                alt="An image of escalator"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">The best Auditorium in the world</p>
+                  <p class="chennel-name">James.Q</p>
+                  <p class="views">350K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/g12.jpg"
+                alt="An image of Harvard study vlog"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Harvard study Vlog</p>
+                  <p class="chennel-name">StudentPro</p>
+                  <p class="views">8K Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="shorts shorts-margin-b">
+            <div class="shorts-icon">
+              <i class="fa-solid fa-file-video"></i>
+              <span class="shorts-text">Shorts</span>
+            </div>
+            <div class="short">
+              <div class="clips">
+                <img
+                  src="Images/s1.jpg"
+                  alt="Two people dancing"
+                  class="shorts-img short-image"
+                />
+                <p class="shorts-title">Dance Challenge with Isabella</p>
+                <p class="shorts-views">1.4M views</p>
+              </div>
+              <div class="clips">
+                <img
+                  src="Images/s2.jpg"
+                  alt="A woman doing skin care "
+                  class="shorts-img"
+                />
+                <p class="shorts-title">How to clear ACNE</p>
+                <p class="shorts-views">12.4M views</p>
+              </div>
+              <div class="clips">
+                <img
+                  src="Images/s3.jpg"
+                  alt="A Man on his knee proposing to his girl friend in public"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">He proposed to her in public</p>
+                <p class="shorts-views">999k views</p>
+              </div>
+              <div class="clips none block">
+                <img
+                  src="Images/s4.jpg"
+                  alt="Couples kissing"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Our 10 years relationship</p>
+                <p class="shorts-views">33.6M views</p>
+              </div>
+              <div class="clips none">
+                <img
+                  src="Images/s5.jpg"
+                  alt="A woman holding a roses"
+                  class="shorts-img"
+                />
+                <p class="shorts-title">Giving Roses to strangers🌹</p>
+                <p class="shorts-views">2.4M views</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="post">
+            <div class="chennels">
+              <img
+                src="Images/c1.jpg"
+                alt="A image of a woman holding books"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Harvard Medical students</p>
+                  <p class="chennel-name">AthieiMedico</p>
+                  <p class="views">11.2M Views . 6 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/c2.jpg"
+                alt="Hight scholl students"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">This is why only 1% succeeds</p>
+                  <p class="chennel-name">MotivateGuru</p>
+                  <p class="views">890K Views . 15 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img src="Images/c3.jpg" alt="A person coding" class="image" />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Study hard and smart</p>
+                  <p class="chennel-name">studentMotivation</p>
+                  <p class="views">1M Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/c4.jpg"
+                alt="A image of a woman holding books"
+                class="image"
+              />
+
+              <div class="details">
+                <img
+                  src="Images/profile-1.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Make it Happen</p>
+                  <p class="chennel-name">Athiei James</p>
+                  <p class="views">8B Views . 3 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img
+                src="Images/c5.jpg"
+                alt="Hight scholl students"
+                class="image"
+              />
+              <div class="details">
+                <img
+                  src="Images/profile-2.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Ganster Paradise - Elon</p>
+                  <p class="chennel-name">Elon Musk (Parody)</p>
+                  <p class="views">2M Views . 2 hours ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chennels">
+              <img src="Images/c6.jpg" alt="A person coding" class="image" />
+
+              <div class="details">
+                <img
+                  src="Images/profile-3.jpg"
+                  alt="headshot"
+                  class="profile-image"
+                />
+                <div class="chennel-details">
+                  <p class="title">Living my dream life</p>
+                  <p class="chennel-name">Malak</p>
+                  <p class="views">11M Views . 12 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
